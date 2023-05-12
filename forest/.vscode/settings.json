@@ -1,0 +1,18 @@
+   
+{  // cmake extension
+   "cmake.skipConfigureIfCachePresent": true,
+   "cmake.buildDirectory": "${workspaceFolder}/../../build/${workspaceFolderBasename}",
+   "cmake.buildBeforeRun": true,
+   "cmake.configureOnEdit": false,
+
+   //command runner extension
+   //use shortcut Ctrl+Shift+R to select custom command!
+   "command-runner.terminal.name": "runCommand",
+   "command-runner.terminal.autoClear": true,
+   "command-runner.terminal.autoFocus": true,
+   "command-runner.commands": {
+      "echo workspaceFolder": "echo ${workspaceFolder}",
+      "echo file": "echo ${file}",
+      "ccmake buildFolder": "cmake ${workspaceFolder}/../../build/${workspaceFolderBasename} -DCMAKE_EXPORT_COMPILE_COMMANDS=ON && ccmake ${workspaceFolder}/../../build/${workspaceFolderBasename}",
+   },
+}
