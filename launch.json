@@ -1,0 +1,67 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "debug xbot2-core --hw ec_imp -V",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${workspaceFolder}/../../install/bin/xbot2-core",
+        "args": ["--hw", "ec_imp", "-V"],
+        "stopAtEntry": false,
+        "cwd": "${workspaceFolder}",
+        "environment": [],
+        "externalConsole": false,
+        "MIMode": "gdb",
+        "miDebuggerPath": "/usr/bin/gdb",
+        "setupCommands": [
+          {
+            "description": "Enable pretty-printing for gdb",
+            "text": "-enable-pretty-printing",
+            "ignoreFailures": true
+          }
+        ],
+      },
+
+      {
+        "name": "debug xbot2-core --hw sim -V",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${workspaceFolder}/../../install/bin/xbot2-core",
+        "args": ["--hw", "sim", "-V"],
+        "stopAtEntry": false,
+        "cwd": "${workspaceFolder}",
+        "environment": [],
+        "externalConsole": false,
+        "MIMode": "gdb",
+        "miDebuggerPath": "/usr/bin/gdb",
+        "setupCommands": [
+          {
+            "description": "Enable pretty-printing for gdb",
+            "text": "-enable-pretty-printing",
+            "ignoreFailures": true
+          }
+        ],
+      },
+
+      {
+        "name": "debug xbot2-core --hw dummy -V",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${workspaceFolder}/../../install/bin/xbot2-core",
+        "args": ["--hw", "dummy", "-V"],
+        "stopAtEntry": false,
+        "cwd": "${workspaceFolder}",
+        "environment": [],
+        "externalConsole": false,
+        "MIMode": "gdb",
+        "miDebuggerPath": "/usr/bin/gdb",
+        "setupCommands": [
+          {
+            "description": "Enable pretty-printing for gdb",
+            "text": "-enable-pretty-printing",
+            "ignoreFailures": true
+          }
+        ],
+      }
+    ]
+  }
