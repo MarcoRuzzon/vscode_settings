@@ -15,4 +15,11 @@
       "echo file": "echo ${file}",
       "ccmake buildFolder": "cmake ${workspaceFolder}/../../build/${workspaceFolderBasename} -DCMAKE_EXPORT_COMPILE_COMMANDS=ON && ccmake ${workspaceFolder}/../../build/${workspaceFolderBasename}",
    },
+
+   {
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true
+       }
+   },  
 }
